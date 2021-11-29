@@ -1,3 +1,9 @@
+// Helps emulate environment or config vars by autodetecting ".env" files and using their data.
+// (setup .env varibles)
+require("dotenv").config();
+
+console.log(`Env variables message was: ${process.env.NICE_MESSAGE}`);
+
 const express = require("express");
 
 const app = express();
